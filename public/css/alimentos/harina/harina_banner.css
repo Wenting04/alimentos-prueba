@@ -1,0 +1,71 @@
+/* Default ---- < 400px */
+:root {
+    --fondo-personalizado: #ecebe9;
+    --color-principal-banner: #8b461b;
+    --color-borde-banner: #8b461b;
+    --color-fondo-banner: white;
+    --color-letra-intro: #545454;
+}
+
+#bannerImg {
+    position: absolute;
+    top: 13px;
+    left: 63%;
+    height: 56px;
+	z-index: 1;
+}
+
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+    #bannerImg {
+        top: 19px;
+        left: 63%;
+        height: 96px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+    #bannerImg {
+        top: 22px;
+        left: 63%;
+        height: 115px;
+    }
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+    #bannerImg {
+        top: 70px;
+        left: 60%;
+        height: 230px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+    #bannerImg {
+        top: 65px;
+        left: 60%;
+        height: 260px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+    #bannerImg {
+        top: 45px;
+        left: 60%;
+        height: 290px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+    #bannerImg {
+        top: 50px;
+        left: 60%;
+        height: 320px;
+    }
+}

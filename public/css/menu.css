@@ -1,0 +1,123 @@
+/* --- Bloques Comunes y Reseteos --- */
+.menuHTML {
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: var(--nav-bg);
+    backdrop-filter: blur(6px);
+}
+
+.menu-item, #menus ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {
+    align-items: stretch;
+    font-family: var(--font-secondary), sans-serif;
+}
+
+/* --- Elementos de Lista (li) --- */
+.menu-item > li, #menus ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item > li {
+    background: var(--nav-footer-primary);
+    border: 1px solid var(--nav-bg);
+    transition: background 0.3s ease;
+}
+
+/* --- Enlaces (a) --- */
+#menus a, #user a, #home a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#menus a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: var(--nav-footer-primary);
+    border-left: 1px solid var(--nav-bg);
+    border-right: 1px solid var(--nav-bg);
+    transition: background 0.3s ease;
+}
+
+#user a, #home a {
+    padding: 0 15px;
+}
+
+/* --- Interacciones --- */
+.menu-item > li:hover, #menus li a:hover {
+    background: var(--nav-bg);
+}
+
+/* --- Elementos Especiales --- */
+#menus {
+    flex: 100%;
+    display: flex;
+    text-transform: capitalize;
+}
+
+#menus ul {
+    justify-content: center;
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+#menu-Btn {
+    display: none;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+    .menu-item {
+        flex-wrap: wrap;
+    }
+
+    #menu-Btn, #user, #home {
+        flex: 1;
+    }
+
+    .menu-item > li {
+        padding: 5px 0;
+    }
+
+    #menu-Btn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #menus {
+        display: none;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    #menus.open {
+        display: flex;
+    }
+
+    #menus ul {
+        flex-direction: column;
+    }
+
+    #menus a {
+        padding: 7px;
+    }
+}

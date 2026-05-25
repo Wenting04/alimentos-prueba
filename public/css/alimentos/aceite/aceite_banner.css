@@ -1,0 +1,70 @@
+/* Default ---- < 400px */
+:root {
+    --fondo-personalizado: url(/img/aceite/fondo_aceite.png);
+    --color-principal-banner: #c3981d;
+    --color-borde-banner: #c3981d;
+    --color-fondo-banner: white;
+    --color-letra-intro: #545454;
+}
+
+#bannerImg {
+    position: absolute;
+    top: 13px;
+    left: 70%;
+    height: 76px;
+	z-index: 1;
+}
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+    #bannerImg {
+        top: 17px;
+        left: 67%;
+        height: 96px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+    #bannerImg {
+        top: 17px;
+        left: 67%;
+        height: 115px;
+    }
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+    #bannerImg {
+        top: 40px;
+        left: 64%;
+        height: 230px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+    #bannerImg {
+        top: 30px;
+        left: 64%;
+        height: 270px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+	#bannerImg {
+        top: 26px;
+        left: 65%;
+        height: 320px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+    #bannerImg {
+        top: 20px;
+        left: 65%;
+        height: 350px;
+    }
+}

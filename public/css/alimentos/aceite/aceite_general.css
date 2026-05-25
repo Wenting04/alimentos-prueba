@@ -1,0 +1,133 @@
+:root {
+    --letra: black;
+    --letras: #c3981d;
+    --color-principal: #c3981d;
+
+    /* FUENTES */ /* index (home) */
+    --index-font: 'Gliker', sans-serif;
+    --font-secundario: 'LeagueSpartan', sans-serif;
+
+    /* PESTANNAS */
+    --pestannas-bg: #fef3d7;
+    --pestannas-color: #c3981d;
+    --pestannas-hover: #e2ba49;
+    --pestannas-active: #edc454;
+    --pestannas-texto: white;
+
+    /* FOOTER y NAV*/
+    --nav-footer-primary: #c3981d;
+    --nav-footer-secondary: white;
+    --nav-bg: #edc454;
+}
+
+#valorNutri {
+    --nutri-letra: #000000;
+    --nutri-color-principal: #c3981d;
+    --nutri-font-principal: 'Gliker', sans-serif;
+    --nutri-font-secundario: 'LeagueSpartan', sans-serif;
+    --nutri-pestannas-bg: #fef3d7;
+    --nutri-color-borde: #e8dfc7;
+    --nutri-color-sombra-hover: rgba(237, 196, 84, 0.25);
+    --nutri-fondo-tarjeta-front: rgba(255, 255, 255, 0.9);
+    --nutri-fondo-tarjeta-back: #ffffff;
+    --nutri-color-texto-front: #3e3829;
+    --nutri-color-texto-back: #544c38;
+    --nutri-color-texto-back-li: #6b6149;
+    --nutri-color-texto-destacado: #503e0e;  /* h3 */
+}
+
+#ingestaRecomendada {
+    --ingesta-accent-color: #c3981d;
+    --ingesta-accent-gradient: #fbecc4;
+    --ingesta-font-principal: 'Gliker', sans-serif;
+    --ingesta-font-secundario: 'LeagueSpartan', sans-serif;
+    --ingesta-pestannas-bg: #fef3d7;
+    --ingesta-bg-card: #ffffff;
+    --ingesta-text-main: #503e0e;
+    --ingesta-text-p: #544c38;
+    --ingesta-text-li: #3e3829;
+    --ingesta-border-color: #e8dfc7;
+    --ingesta-shadow-accent: rgba(237, 196, 84, 0.15);
+    --ingesta-font-family: 'LeagueSpartan', sans-serif;
+}
+
+#racioMedi {
+    --raciones-accent: #c3981d;
+    --raciones-accent-light: #fbecc4;
+    --raciones-font-principal: 'Gliker', sans-serif;
+    --raciones-font-secundario: 'LeagueSpartan', sans-serif;
+    --raciones-pestannas-bg: #fef3d7;
+    --raciones-bg-card: #ffffff;
+    --raciones-text-title: #503e0e;
+    --raciones-text-body: #544c38;
+    --raciones-text-highlight: #c3981d;
+    --raciones-border: #e8dfc7;
+    --raciones-shadow: rgba(237, 196, 84, 0.12);
+}
+
+#patoFisio {
+    --patologia-accent: #c3981d;
+    --patologia-accent-gradient: #fbecc4;
+    --patologia-font-principal: 'Gliker', sans-serif;
+    --patologia-font-secundario: 'LeagueSpartan', sans-serif;
+    --patologia-pestannas-bg: #fef3d7;
+    --patologia-bg-card: #ffffff;
+    --patologia-bg-badge: #fdf9ee;
+    --patologia-border: #e8dfc7;
+    --patologia-border-divider: #f3eae1;
+    --patologia-text-title: #503e0e;
+    --patologia-text-h4: #1a160d;
+    --patologia-text-body: #544c38;
+    --patologia-shadow: rgba(45, 38, 21, 0.08);
+    --patologia-shadow-hover: rgba(237, 196, 84, 0.25);
+    --patologia-strong-bg: rgba(237, 196, 84, 0.1);
+    --patologia-font-family: 'LeagueSpartan', sans-serif;
+}
+
+#metodoAnalisis {
+    --metodo-accent: #c3981d;
+    --metodo-accent-gradient: #fbecc4;
+    --metodo-font-principal: 'Gliker', sans-serif;
+    --metodo-font-secundario: 'LeagueSpartan', sans-serif;
+    --metodo-pestannas-bg: #fef3d7;
+    --metodo-bg-card: #ffffff;
+    --metodo-bg-subtle: #fdfaf2;
+    --metodo-bg-hover: #fffdf9;
+    --metodo-border: #f3eae1;
+    --metodo-border-light: #fdf9ee;
+    --metodo-border-subtle: #faf4e5;
+    --metodo-border-accordion: #e3d7b9;
+    --metodo-text-main: #503e0e;
+    --metodo-text-body: #544c38;
+    --metodo-text-muted: #827559;
+    --metodo-text-title: #2d2615;
+    --metodo-shadow: rgba(45, 38, 21, 0.05);
+    --metodo-shadow-hover: rgba(45, 38, 21, 0.1);
+    --metodo-shadow-accent: rgba(237, 196, 84, 0.1);
+    --metodo-shadow-accordion: rgba(237, 196, 84, 0.15);
+    --metodo-badge-opacity: rgba(237, 196, 84, 0.1);
+    --metodo-watermark-opacity: rgba(237, 196, 84, 0.05);
+    --metodo-font-family: 'LeagueSpartan', sans-serif;
+}
+
+#curiosidades {
+    --curiosidades-accent: #c3981d;
+
+    /* - tarjetas */
+    --curiosidades-color-borde: #e8dfc7;
+
+    /* - fondos */
+    --curiosidades-fondo-tarjeta-front: #ffffff;
+    --curiosidades-fondo-tarjeta-back: #ffffff;
+    --curiosidades-pestannas-bg: #fef3d7;
+
+    /* -textos */
+    --curiosidades-font-principal: 'Gliker', sans-serif;
+    --curiosidades-font-secundario: 'LeagueSpartan', sans-serif;
+    --curiosidades-color-texto-front: #3e3829;
+    --curiosidades-color-texto-back: #544c38;
+    --curiosidades-color-texto-back-li: #6b6149;
+
+    /* - acentos / ui */
+    --curiosidades-color-lateral: #c3981d;
+}

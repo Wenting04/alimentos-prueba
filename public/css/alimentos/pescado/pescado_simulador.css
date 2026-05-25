@@ -1,0 +1,301 @@
+/* ==========================================================================
+   Fuentes Usadas
+   ========================================================================== */
+@font-face {
+    font-family: 'Gliker';
+    src: url('/fonts/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Contenedor Principal y Simulador
+   ========================================================================== */
+.simulador {
+    background: white;
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.simulador label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#valoresRango {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+#diasValorMov, #diasValorFin {
+    font-size: 13px;
+    color: #6d716f;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Control Deslizante (Input Range)
+   ========================================================================== */
+input[type="range"] {
+    width: 100%;  
+    height: 4px; 
+    appearance: none;            
+    -webkit-appearance: none;     
+    -moz-appearance: none; 
+    background: transparent; 
+    margin-top: 10px;
+    border-radius: 10px;
+}
+  
+/* Estilo de la barra */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 10px;
+}
+  
+input[type="range"]::-moz-range-track {
+    height: 5px;
+    border-radius: 10px;
+}
+  
+input[type="range"]::-ms-track {
+    height: 5px;
+    border-radius: 10px;
+    border: none;
+    color: transparent;
+}
+  
+/* Estilo del botón (Thumb) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #6e8192;
+    border-radius: 50%;
+    margin-top: -6px; 
+}
+  
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #6e8192;
+    border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #6e8192;
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   Tabla de Parámetros
+   ========================================================================== */
+.simulador table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.simulador th, .simulador td {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.simulador th {
+    background-color: #6e8192;
+    color: white;
+}
+
+/* Estados dinámicos de las celdas */
+.estadoNormal {
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+.estadoModerado {
+    background-color: #fff3cd;
+    color: #856404;
+    font-weight: bold;
+}
+
+.estadoCritico {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Media Queries Adaptadas
+   ========================================================================== */
+
+/* 400px - 500px */
+@media (min-width: 400px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 14px;
+    }
+
+    input[type="range"] {
+        height: 6px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 16px;
+        height: 16px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 16px;
+        height: 16px;
+    }
+}   
+
+/* 501px - 800px */
+@media (min-width: 501px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 16px;
+    }
+
+    input[type="range"] {
+        height: 7px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 17px;
+        height: 17px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 17px;
+        height: 17px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+/* 801px - 1000px */
+@media (min-width: 801px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 18px;
+    }
+
+    input[type="range"] {
+        height: 8px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 18px;
+        height: 18px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* 1001px - 1200px */
+@media (min-width: 1001px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 19px;
+    }
+
+    input[type="range"] {
+        height: 9px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 19px;
+        height: 19px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 19px;
+        height: 19px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+/* 1201px - 1600px */
+@media (min-width: 1201px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 15px;
+    }
+
+    input[type="range"] {
+        height: 10px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* 1601px en adelante */
+@media (min-width: 1601px) {
+    #diasValorMov, #diasValorFin {
+        font-size: 17px;
+    }
+
+    input[type="range"] {
+        height: 13px; 
+    }
+      
+    input[type="range"]::-webkit-slider-thumb {
+        width: 23px;
+        height: 23px;
+    }
+      
+    input[type="range"]::-moz-range-thumb {
+        width: 23px;
+        height: 23px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 23px;
+        height: 23px;
+    }
+}

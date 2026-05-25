@@ -1,0 +1,117 @@
+#micro {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    overflow: hidden;
+
+    padding: 15px;
+
+    border: 2px solid #ab2a20;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    background-color: #ffffff;
+}
+
+#micro h2 {
+    margin-bottom: 5%;
+    font-family: 'Gliker';
+    color: #ab2a20;
+    font-size: clamp(0.5rem, 3vw + 0.5rem, 42px); 
+}
+
+/* =========================================================================
+   Contenedor de botones ultra-flexible
+   ========================================================================= */
+.botones {
+    display: flex;
+    flex-direction: row;     
+    flex-wrap: wrap;         
+    justify-content: center; 
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.botonMicro {
+    width: 85%; 
+    height: auto;
+    padding: 6px 12px;
+    background-color: #ab2a20;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(0.5rem, 1vw + 0.25rem, 1.2rem);
+    transition: background-color 0.2s ease;
+    margin: 0;
+    white-space: normal; 
+    word-break: break-word;
+}
+
+.botonMicro:hover {
+    background-color: #ca4d44;
+}
+
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+#tablaMicroorganismos {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: clamp(0.65rem, 0.5vw + 0.5rem, 1.2rem);
+}
+
+#tablaMicroorganismos th, #tablaMicroorganismos td {
+    padding: clamp(3px, 1vw + 2px, 18px) clamp(2px, 1vw + 1px, 16px);
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#tablaMicroorganismos thead {
+    background-color: #ab2a20;
+    color: white;
+}
+
+.estadoNormal {
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+.estadoModerado {
+    background-color: #fff3cd;
+    color: #856404;
+    font-weight: bold;
+}
+.estadoCritico {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/* =========================================================================
+   MEDIA QUERIES MÍNIMAS
+   ========================================================================= */
+
+@media (min-width: 450px) {
+    .tabla-responsive {
+        overflow-x: visible; 
+    }
+}
+
+@media (min-width: 501px) {
+    .botonMicro {
+        width: clamp(160px, 20vw, 230px); 
+        height: clamp(40px, 4vw, 55px);
+    }
+}

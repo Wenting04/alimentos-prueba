@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Gliker';
+  src: url('/fonts/Gliker-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#mapa {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  padding: 38px;
+  border: 1px solid #d1dce8;
+  box-shadow: 
+      0 4px 10px rgba(15, 23, 42, 0.03), 
+      0 12px 30px rgba(15, 23, 42, 0.04);
+}
+
+.titulosMapa{
+  font-family: 'Gliker';
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #77b4d8;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.descMapa{
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.mapaContenedor {
+  max-width: 100%;
+  text-align: left;
+}
+
+#imagenMapa {
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+#dialogPaises {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	border: 3.5px solid #77b4d8;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	min-width: 150px;
+	min-height: 50px;
+	text-align: center;
+}
+
+#cerrarBoton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+}
+
+.contenidoDialogo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 6px;
+}
+
+#infoTitulo{
+  margin-bottom: 10px;
+}
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+  .titulosMapa{
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+
+  .descMapa{
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  #mapa {
+    margin-top: 30px;
+  }
+
+  #dialogPaises {
+    min-width: 240px;
+    min-height: 75px;
+  }
+
+  .contenidoDialogo {
+    font-size: 8px;
+  }
+
+
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+  .titulosMapa{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .descMapa{
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  #mapa {
+    margin-top: 40px;
+  }
+
+  #dialogPaises {
+    min-width: 320px;
+    min-height: 100px;
+  }
+
+  .contenidoDialogo {
+    font-size: 11px;
+  }
+
+  #cerrarBoton {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+  .titulosMapa{
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .descMapa{
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+
+  #mapa {
+    margin-top: 50px;
+  }
+
+  #dialogPaises {
+    min-width: 350px;
+    min-height: 120px;
+  }
+
+  .contenidoDialogo {
+    font-size: 14px;
+  }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+  .titulosMapa{
+    font-size: 31px;
+    margin-bottom: 23px;
+  }
+
+  .descMapa{
+    font-size: 19px;
+    margin-bottom: 27px;
+  }
+
+  #mapa {
+    margin-top: 60px;
+  }
+
+  #dialogPaises {
+    min-width: 380px;
+    min-height: 170px;
+  }
+
+  .contenidoDialogo {
+    font-size: 16px;
+  }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+  .titulosMapa{
+    font-size: 45px;
+    margin-bottom: 27px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .descMapa{
+    font-size: 21px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #mapa {
+    margin-top: 65px;
+  }
+
+  #dialogPaises {
+    min-width: 550px;
+    min-height: 200px;
+  }
+
+  .contenidoDialogo {
+    font-size: 20px;
+  }
+
+  #cerrarBoton {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+  .titulosMapa{
+    font-size: 45px;
+    margin-bottom: 32px;
+  }
+
+  .descMapa{
+    font-size: 25px;
+    margin-bottom: 34px;
+  }
+
+  #mapa {
+    margin-top: 75px;
+  }
+
+  #dialogPaises {
+    min-width: 700px;
+    min-height: 250px;
+  }
+
+  .contenidoDialogo {
+    font-size: 24px;
+  }
+}

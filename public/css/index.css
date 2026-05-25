@@ -1,0 +1,490 @@
+:root {
+    /* ===================== COLORES ===================== */
+    --letra: #333;
+
+    --color-principal: #98a533;
+    --color-secundario: #d35318;
+
+    --color-aceite: #c3981d;
+    --color-carne: #d2938a;
+    --color-harina: #bda98c;
+    --color-huevo: #eed8c3;
+    --color-leche: #c6c6c2;
+    --color-pescado: #f1e2dd;
+
+    --color-aceite-nombre: #fadd10;
+    --color-carne-nombre: #6f1e1e;
+    --color-harina-nombre: #604c3a;
+    --color-huevo-nombre: #7a563c;
+    --color-leche-nombre: #8da1a1;
+    --color-pescado-nombre: #ee9157;
+
+    /* FOOTER y NAV */
+    --nav-footer-primary: #98a533;
+    --nav-footer-secondary: #e4dbbe;
+    --nav-bg: #7c8821;
+    /* FOOTER y NAV*/
+
+    /* FONDOS */
+    --color-fondo: #e4dbbe;
+    --color-fondo-blanco: #ffffff;
+
+    /* FUENTES */
+    --index-font: 'Gagalin', sans-serif;
+    --font-secondary: 'LeagueSpartan', sans-serif;
+}
+
+/* ================= FUENTES ================= */
+@font-face {
+    font-family: 'Gagalin';
+    src: url('/fonts/Gagalin-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===================================================== */
+/* ===================== RESET ========================= */
+/* ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: auto;
+    height: auto;
+}
+
+/* ===================================================== */
+/* ===================== BANNER ======================== */
+/* ===================================================== */
+.bannerInicio {
+    background-color: var(--color-fondo);
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    position: relative;
+}
+
+.doodleInicio {
+    background-image: url("/img/doodleInicio.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    width: 100%;
+    height: auto;
+}
+
+.imagenInicio {
+    background-image: url("/img/imagenInicio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    height: 100%;
+}
+
+.tituloInicio {
+    font-family: "Anton", sans-serif;
+    width: 90%;
+    font-size: clamp(0px, 5vw, 5rem);
+    color: var(--color-principal);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.tituloInicio span {
+    color: var(--color-secundario);
+}
+
+/* ===================================================== */
+/* ===================== PROMOCIÓN ===================== */
+/* ===================================================== */
+
+.promocionIncio {
+    background-color: var(--color-fondo-blanco);
+    border-bottom: 1px solid var(--color-secundario);
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    position: relative;
+}
+
+#contetTitiProduc {
+    display: flex;
+    justify-content: center;
+}
+
+#tituloProduc {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: clamp(0px, 8vw, min(8vh, 4rem));
+    font-style: normal;
+    color: var(--color-secundario);
+    position: absolute;
+    padding: 1rem;
+}
+
+/* ===================================================== */
+/* ===================== GRID PRODUCTOS ================ */
+/* ===================================================== */
+
+.cajasProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 1rem auto 0;
+    padding: 10% 1rem 1rem;
+
+    box-sizing: border-box;
+
+    gap: 0.5rem;
+
+    text-transform: uppercase;
+}
+
+/* ===================================================== */
+/* ===================== TARJETAS ====================== */
+/* ===================================================== */
+
+.cajasProductos a {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 20rem;
+    min-width: 0;
+
+    aspect-ratio: 3 / 4;
+    max-height: 20rem;
+
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+
+    container-type: inline-size;
+    container-name: tarjeta;
+}
+
+.cajasProductos a:hover {
+    transform: scale(1.03);
+}
+.cajasProductos a:active {
+    transform: scale(0.95);
+}
+
+/* ===================================================== */
+/* ===================== PRODUCTO ====================== */
+/* ===================================================== */
+
+.producto {
+    width: 100%; /* Cambiado de 90% a 100% para ocupar todo el ancho disponible */
+    height: 65%;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Añadimos padding a los lados para que el texto no toque los bordes físicos de la tarjeta */
+    padding: 2rem 1rem 0; 
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================================================== */
+/* ===================== IMÁGENES ====================== */
+/* ===================================================== */
+
+.cajasProductos a img {
+    position: absolute;
+
+    top: 32%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    height: auto;
+
+    max-width: 280px;
+
+    object-fit: contain;
+
+    z-index: 2;
+}
+
+/* Tamaños individuales */
+#productoHuevos img { max-width: 200px; }
+#productoAceite img { max-width: 280px; }
+#productoLeche img { max-width: 170px; }
+#productoCarne img { max-width: 140px; }
+#productoPescado img { max-width: 200px; }
+#productoHarina img { max-width: 150px; }
+
+/* ===================================================== */
+/* ===================== TEXTOS ======================== */
+/* ===================================================== */
+
+.producto .nombre,
+.producto .flecha {
+    font-family: 'Gagalin';
+    line-height: 1.1;
+    width: 100%;
+
+    max-height: 100%; 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.producto .nombre {
+    /* Mínimo: 0px 
+    Dinámico: 11% del ancho de la tarjeta
+    Máximo: ~80% del ancho de la tarjeta (el 100% del espacio interno útil) */
+    font-size: clamp(0px, 15cqw, 95cqw); 
+    word-wrap: break-word;
+    
+    /* Corta el texto con puntos suspensivos (...) si por alguna razón supera la altura */
+    -webkit-line-clamp: 2;
+}
+
+.producto .flecha {
+    /* Mínimo: 0px 
+    Dinámico: 15% del ancho de la tarjeta
+    Máximo: ~80% del ancho de la tarjeta */
+    font-size: clamp(0px, 15cqw, 95cqw);
+    
+    -webkit-line-clamp: 1;
+}
+
+/* ===================================================== */
+/* ===================== COLORES PRODUCTOS ============= */
+/* ===================================================== */
+
+#productoHuevos {
+    background-color: var(--color-huevo);
+    color: var(--color-huevo-nombre);
+}
+#productoAceite {
+    background-color: var(--color-aceite);
+    color: var(--color-aceite-nombre);
+}
+#productoLeche {
+    background-color: var(--color-leche);
+    color: var(--color-leche-nombre);
+}
+#productoCarne {
+    background-color: var(--color-carne);
+    color: var(--color-carne-nombre);
+}
+#productoPescado {
+    background-color: var(--color-pescado);
+    color: var(--color-pescado-nombre);
+}
+#productoHarina {
+    background-color: var(--color-harina);
+    color: var(--color-harina-nombre);
+}
+
+
+/* ===================================================== */
+/* ===================== MEDIA QUERIES ================= */
+/* ===================================================== */
+
+/* ===================== 400px+ ======================== */
+@media (min-width: 400px) {
+
+    .bannerInicio {
+        min-height: 245px;
+    }
+
+    .promocionIncio {
+        min-height: 30px;
+    }
+
+    .cajasProductos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto {
+        padding-top: 2.5rem;
+    }
+
+    .cajasProductos a img {
+        width: 70%;
+    }
+}
+
+/* ===================== 501px+ ======================== */
+@media (min-width: 501px) {
+
+    .bannerInicio {
+        min-height: 190px;
+    }
+
+    .promocionIncio {
+        min-height: 40px;
+    }
+
+    .cajasProductos a img {
+        width: 65%;
+        top: 30%;
+    }
+
+    .producto .nombre {
+        font-size: clamp(0px, 13cqw, 80cqw); 
+        word-wrap: break-word;
+    }
+
+    .producto .flecha {
+        font-size: clamp(0px, 13cqw, 80cqw);
+    }
+}
+
+/* ===================== 801px+ ======================== */
+@media (min-width: 801px) {
+
+    .bannerInicio {
+        min-height: 250px;
+    }
+
+    .tituloInicio {
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .promocionIncio {
+        min-height: 50px;
+    }
+
+    .cajasProductos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cajasProductos a img {
+        top: 27%;
+    }
+}
+
+/* ===================== 1001px+ ======================= */
+@media (min-width: 1001px) {
+
+    .bannerInicio {
+        min-height: 350px;
+    }
+
+    .tituloInicio {
+        top: 80px;
+    }
+
+    .cajasProductos a {
+        max-width: 24rem;
+        max-height: 25rem;
+    }
+
+    .cajasProductos a img {
+        top: 26%;
+        width: 75%;
+    }
+
+    /* Imágenes */
+    #productoHuevos img { max-width: 300px; }
+    #productoAceite img { max-width: 350px; }
+    #productoLeche img { max-width: 215px; }
+    #productoCarne img { max-width: 200px; }
+    #productoPescado img { max-width: 260px; }
+    #productoHarina img { max-width: 260px; }
+}
+
+/* ===================== 1201px+ ======================= */
+@media (min-width: 1201px) {
+
+    .bannerInicio {
+        min-height: 405px;
+    }
+
+    .promocionIncio {
+        min-height: 60px;
+    }
+
+    .cajasProductos {
+        gap: 2rem;
+    }
+
+    .producto {
+        padding-top: 5rem;
+    }
+
+    .cajasProductos a {
+        max-width: 28rem;
+        max-height: 30rem;
+    }
+
+    .cajasProductos a img {
+        top: 28%;
+        width: 80%;
+    }
+
+    /* Imágenes */
+    #productoHuevos img { max-width: 400px; }
+    #productoAceite img { max-width: 450px; }
+    #productoLeche img { max-width: 350px; }
+    #productoCarne img { max-width: 320px; }
+    #productoPescado img { max-width: 380px; }
+    #productoHarina img { max-width: 340px; }
+}
+
+/* ===================== 1601px+ ======================= */
+@media (min-width: 1601px) {
+
+    .bannerInicio {
+        min-height: 510px;
+    }
+
+    .promocionIncio {
+        min-height: 70px;
+    }
+
+    .cajasProductos a {
+        max-width: 30rem;
+        max-height: 32rem;
+    }
+}

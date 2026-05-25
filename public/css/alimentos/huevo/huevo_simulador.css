@@ -1,0 +1,132 @@
+/* ===== CONTENEDOR PRINCIPAL DENTRO DE LAB CARD ===== */
+#contenSimulador {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* ===== FORMULARIO ===== */
+#formuSimulador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #ddd;
+}
+
+#formuSimulador p {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: #e78224;
+    font-size: large;
+}
+
+#formuSimulador label {
+    margin-left: 10px;
+}
+
+/* ===== BOTÓN ===== */
+#botonFrescura {
+    width: 100%;
+    max-width: 220px;
+    padding: 8px 10px;
+    background-color: #e78224;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ===== RESULTADO ===== */
+#resultadoSimulador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ec7200;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #ddd;
+    text-align: center;
+}
+
+/* ===== CONTENIDO RESULTADO ===== */
+.contenResultadoContenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* ===== IMAGEN ===== */
+#imagenSimulador {
+    width: 100px;
+    max-width: 100%;
+}
+
+/* ===== BARRAS ===== */
+#phBarras {
+    display: none;
+    margin-top: 1rem;
+}
+
+.barrasFondo {
+    background: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#barraClara {
+    background: #22a6b3;
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+#barraYema {
+    background: #f39c12;
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+/* ===== MEDIA QUERY (adaptada a card, sin romper grid) ===== */
+@media (min-width: 801px) {
+
+    #contenSimulador {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #formuSimulador {
+        width: 40%;
+    }
+
+    #resultadoSimulador {
+        width: 60%;
+    }
+
+    .contenResultadoContenido {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .datosSimulador {
+        width: 60%;
+        text-align: left;
+    }
+
+    .contenImagenSimulador {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+}
