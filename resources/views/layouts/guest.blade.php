@@ -11,6 +11,9 @@
         <!-- Favicon: icono nombre en pestaña web -->
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
+        <!-- Contentsquare para Mapa de Calor en hotjar -->
+        <script src="https://t.contentsquare.net/uxa/86e7dac14aae7.js"></script>
+
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
